@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Арифметичні Операції </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> Арифметичні Операції </h1>
+
+    <div>
+        <label for="firstNumber"> Перше Число: </label>
+        <input type="text" id="firstNumber">
+    </div>
+
+    <div>
+        <label for="operation"> Операція: </label>
+        <input type="text" id="operation">
+    </div>
+
+    <div>
+        <label for="secondNumber"> Друге Число: </label>
+        <input type="text" id="secondNumber">
+    </div>
+
+    <div>
+        <label for="userAnswer"> Введіть відповідь: </label>
+        <input type="text" id="userAnswer">
+        <button onclick="checkAnswer()"> Перевірити </button>
+    </div>
+
+    <div>
+        <label> Результат: </label>
+        <span id="result"></span>
+        <button onclick="showHelp()" class="help-button"> Допомога </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Форма доставки </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> Форма доставки </h1>
+
+    <div>
+        <label for="price"> Вартість товару, грн: </label>
+        <input type="number" id="price" min="0">
+    </div>
+
+    <div>
+        <label for="weight"> Маса товару, кг: </label>
+        <input type="number" id="weight" min="0">
+    </div>
+
+    <div>
+        <input type="checkbox" id="insurance" onchange="calculateDelivery()">
+        <label for="insurance"> Страховка (2% від вартості) </label>
+    </div>
+
+    <button onclick="calculateDelivery()"> Розрахувати вартість доставки </button>
+
+    <div id="result"></div>
+
+    <table class="delivery-categories">
+        <caption> Категорії доставки </caption>
+        <tr>
+            <th> Категорія </th>
+            <th> Вага (до кг) </th>
+            <th> Вартість, грн </th>
+        </tr>
+        <tr>
+            <td> Мала </td>
+            <td> до 2 кг </td>
+            <td> 40 грн </td>
+        </tr>
+        <tr>
+            <td> Середня </td>
+            <td> до 10 кг </td>
+            <td> 60 грн </td>
+        </tr>
+        <tr>
+            <td> Велика </td>
+            <td> до 30 кг </td>
+            <td> 80 грн </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
